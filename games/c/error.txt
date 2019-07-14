@@ -1,0 +1,4 @@
+/tmp/ccD3Ihmp.o: In function `main':
+test.c:(.text+0x160): undefined reference to `pthread_create'
+test.c:(.text+0x16c): undefined reference to `pthread_detach'
+collect2: error: ld returned 1 exit status

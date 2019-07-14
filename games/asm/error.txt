@@ -1,0 +1,1 @@
+nasm: fatal: unable to open input file `test.o'

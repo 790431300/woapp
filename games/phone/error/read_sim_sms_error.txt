@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "python/read_sim_sms.py", line 3, in <module>
+    port = serial.Serial("/dev/ttyUSB0", baudrate=115200, timeout=3.0);
+  File "/usr/lib/python2.7/dist-packages/serial/serialutil.py", line 261, in __init__
+    self.open()
+  File "/usr/lib/python2.7/dist-packages/serial/serialposix.py", line 278, in open
+    raise SerialException("could not open port %s: %s" % (self._port, msg))
+serial.serialutil.SerialException: could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'

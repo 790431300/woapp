@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "python/read_sim_sms_all.py", line 11, in <module>
+    print(str(text[x])+",");
+IndexError: list index out of range

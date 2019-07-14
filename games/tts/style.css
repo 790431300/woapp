@@ -1,0 +1,80 @@
+@charset "utf-8";*{padding:0;margin:0}body{max-width:720px;margin:0 auto;font-family:"\5FAE\8F6F\96C5\9ED1","Droid Sans Fallback",Arial,sans-serif;-webkit-tap-highlight-color:transparent;background-color:#fff;color:#999;font-size:14px;-webkit-text-size-adjust:none;text-size-adjust:none;background-repeat:no-repeat;background-size:100% 80px;background-image:-moz-linear-gradient(-90deg,rgba(44,153,255,.10196) 0,rgba(44,153,255,0) 100%);background-image:-webkit-linear-gradient(-90deg,rgba(44,153,255,.10196) 0,rgba(44,153,255,0) 100%);background-image:-ms-linear-gradient(-90deg,rgba(44,153,255,.10196) 0,rgba(44,153,255,0) 100%)}a{text-decoration:none}a:hover,a:active,a:link{}li,ul{list-style-type:none}img{border:0}
+.top{background:#1e90d9;height:160px;text-align:center;color:#94c1e9;font-size:13px;position:relative;margin-bottom:0px;}
+
+header{
+		position: relative;
+		text-align:center;padding-left:18px;
+		border-bottom:0px solid #DFDFDF;
+		background-color: #56a845;
+        background:-webkit-linear-gradient(top,#56a845);
+        background:linear-gradient(top,#56a845);
+		-webkit-box-shadow: 0 1px 1px 0px rgba(50,50,50,.2);
+	/*	box-shadow: 0 1px 1px 0px rgba(50,50,50,.2);*/
+	}
+	header a{
+		position: absolute;
+		width: 45px;
+		height: 45px;
+		top: 0;
+		left: 0;
+		float: left;
+	}
+	header a:after{
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 20px;
+		width: 10px;
+		height: 10px;
+		margin-top: -5px;
+		border: #fff solid;
+		border-width: 2px 2px 0 0;
+		-webkit-transform: rotate(225deg);
+	}
+	h1{
+		height: 45px;color:#F4F4F4;
+		line-height: 45px;
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+
+.top h1{font-size:18px;color:#fff;font-weight:98;padding:12px 18px;text-align:center;}
+.top em img{position:absolute;left:10px;bottom:-15px;left:50px;height:50px;width:50px;border-radius:80px;z-index:88;opacity:0.5}
+
+input[type="range"] {
+  /*-webkit-box-shadow: 0 1px 0 0px #424242, 0 1px 0 #060607 inset, 0px 2px 10px 0px black inset, 1px 0px 2px rgba(0, 0, 0, 0.4) inset, 0 0px 1px rgba(0, 0, 0, 0.6) inset;*/
+  -webkit-appearance: none; /*去除默认样式*/
+  margin-top: 42px;
+  background-color: #ebeff4;
+  /*border-radius: 15px;*/
+  width: 80% !important;
+  -webkit-appearance: none;
+  height:4px;
+  padding: 0;
+  border: none;
+
+  /*input的长度为80%，margin-left的长度为10%*/
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;/*去除默认样式*/
+  cursor: default;
+  top: 0;
+  height: 20px;
+  width: 20px;
+  transform: translateY(0px);
+  /*background: none repeat scroll 0 0 #5891f5;*/
+  background: #fff;
+  border-radius: 15px;
+  border: 5px solid #006eb3;
+  /*-webkit-box-shadow: 0 -1px 1px #fc7701 inset;*/
+}
+
+
+#n{width:100%;display:-webkit-box;display:-moz-box;display:box;margin:auto;margin-bottom:1px;}
+#n a{display:block;-webkit-box-flex:1;-moz-box-flex:1;box-flex:1;text-align:center;line-height:21px;font-size:18px;padding:8px;border-right:0px inset #228366;word-break:break-all;white-space:pre-wrap;}
+
+#n a e{background:#F7EED6;background:url(image/15.jpg) no-repeat 0 0;color:#00BB00;font:size:16px;border-radius:5px;margin-left:5px;padding:3px 9px 3px 9px;box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.2);-webkit-tap-highlight-color:rgba(0,0,0,0);}
+
+.submit{margin-top:20px;margin-bottom:20px;padding:0 20px;}
+.submit .btn{padding:10px 25px;background:#56a845;border:1px solid #CCC;color:#FFF;border-radius:4px;display:inline-block;margin:0 10px;width:80%;}

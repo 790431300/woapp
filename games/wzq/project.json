@@ -1,0 +1,1 @@
+{"languageJson": true, "gameId": "DoBang", "showFPS": false, "language": "zh", "domainAllowed": [], "preloader": "flax.Preloader", "frameRate": 60, "height": 800, "width": 480, "version": 1.0, "project_type": "javascript", "debugMode": 1, "renderMode": 0, "id": "gameCanvas", "landscape": false}

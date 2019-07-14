@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>沃WD-拨号器</title>
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/><meta content="yes" name="apple-mobile-web-app-capable"/><meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+<meta content="telephone=no" name="format-detection"/><link rel="stylesheet" href="css/mobileNumbk.css">
+<style>
+html,body{width:100%;margin: 0;height100%;padding: 0;overflow:hidden;background-image: url(image/WO_bg.jpg);background-size:100%;}</style>
+</head>
+<body>
+<div id="phone" style="display:none;text-center;padding:18px;background:#eee;border-radius:8px;margin:8px;margin-top:50px;">QQ:790431300</div>
+<div id="phone_end" style="text-center;padding:18px;background:#eee;border-radius:2px;margin:8px;margin-top:10px;overflow:scroll;overflow-x:hidden;height:100px">SIM实时信息<br/></div>
+
+<script type="text/javascript" src="../../script/jquery-1.12.0.min.js"></script><script type="text/javascript" src="js/mobileNumkb.js"></script>
+<script type="text/javascript">
+var option1 = {
+style: 3,//颜色风格
+textDone: '拨打',
+textDelete: '退格',
+textClear: '清除',
+textCancel: '退出',
+textpcm: 'n',
+textSubtract: '#'
+}
+
+$("#phone").numbk(option1).click(function(){
+console.log("click1");
+
+$.get("read_sim.php?at=ATH",function(data){
+
+$("#phone").text("已点击挂断");
+
+});
+
+});
+
+
+$(".numbk_exit").click(function(){
+history.back(-1);
+});
+$(".numbk_sure").click(function(){
+phone=$('.numbk_screen').text();
+if(phone==''){
+alert("号码不能为空");
+return 1;
+}
+$.get("phone.php?phone="+phone,function(data){
+if(data != ""){
+$(".numbk_layer").hide();
+$("#phone").show();
+if(data!='呼叫失败/号码不能为空'){
+$("#phone").text("重新呼叫");
+}
+$("#phone").html(data+"<br/>点击挂断电话");
+
+}else{
+alert("拨打失败");
+}
+});
+});
+
+function phone_end(){
+
+$.get("read_sim.php?at=",function(data){
+
+if(data != "[]"){
+//$("#phone_end").show();
+$("#phone_end").append(data+"<br/>");
+document.getElementById("phone_end").scrollTop =99999;
+
+}
+
+});
+}
+
+$set_time=setInterval("phone_end()",1000);
+</script>
+
+
+</body>
+</html>

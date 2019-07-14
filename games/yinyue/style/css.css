@@ -1,0 +1,41 @@
+*{margin:0;padding:0;}
+body,button,input,select,textarea{font:16px "微软雅黑",arial,sans-serif}
+a{color:#fff;text-decoration:none;}
+ul,li{list-style:none;}
+.fl{float:left;}
+.fr{float:right;}
+em,var{font-style:normal;}
+img{border:0;}
+*{
+-webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
+-webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
+-webkit-tap-highlight-color: rgba(210,210,210,0.35); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+-webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
+}
+#lrctextId *{-webkit-transform:translateZ(0)}
+#newlrcId{color:white;}
+html{height:100%;width:100%;}
+.main{min-width:320px;position: absolute;left: 0;top: 0;width: 100%;}
+.bg{background:url(http://img04.taobaocdn.com/imgextra/i4/1655943686/TB26zHAcFXXXXakXXXXXXXXXXXX_!!1655943686.jpg) center no-repeat;background-size: cover;width:100%;height:100%;-moz-filter:blur(9px);-o-filter:blur(9px);-ms-filter:blur(9px);filter:blur(9px);-webkit-filter: blur(9px);position:absolute;left:0;top:0;z-index:-1}
+.img_block{position:relative;width:150px;height:150px;border:5px solid rgba(255,255,255,0.3);margin:0 auto;border-radius:3px}
+.down_btn{position:absolute;bottom:-15px;left:22px;}
+.lrc{line-height:30px;text-align:center;font-size:1.1em;margin-top:15px;height:73px;overflow:hidden;font-family:Arial;margin-top:20px;padding:0 3%;}
+.col79{color:#79faff;}
+.filter{width: 100%;height: 100%;background: rgba(0,0,0,0.5);position: absolute;left: 0;top: 0;z-index: 0;}
+ul,li{list-style:none;}
+.line_bar{height:3px;background:rgba(93,93,93,0.26);box-shadow:1px 0px 1px rgba(0,0,0,0.26) inset;position:relative;width:100%;}
+.line_bar li{height:3px;background:rgba(255,255,255,0.35);float:left;}
+.line_bar li em{height:3px;background:#46b4e6;float:left;}
+.play_icon{width:8px;height:8px;border-radius:8px;background:#fff;position:absolute;top:-4px;padding:2px;}
+.play_m{padding-top:10px;overflow:hidden;position:absolute;left:50%;margin-left:-82px;width:200px;}
+.play_m a{float:left;margin-right:35px;}
+.time {font-size:14px;font-family:Arial;overflow:hidden;height:25px;margin:0;clear:both;}
+.time span{float:left;}
+.time .fr{float:right;}
+.newfoot{position: fixed;left: 0;bottom: 0;width: 100%;height:90px;}
+.song{font-family:Arial;font-size:1.1em;padding-top:20px;height:25px;width:300px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;margin:0 auto;text-align:center;font-weight:bold;}
+
+.lyrTex{width:100%;height:120px;margin:0 auto;overflow:hidden;text-align:center;font:14px/28px "微软雅黑";color:#000}
+.lyric_now{color:#79faff}
+
+.tcbtn{height:30px;line-height:30px;background:rgba(0,0,0,0.2);color:white;display:block;width:60px;float:right;text-align:center;margin:8px 5px 0 0;position:absolute;z-index:99;border-radius:4px;}
