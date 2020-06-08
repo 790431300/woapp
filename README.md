@@ -71,6 +71,8 @@
 | --picture 图片
 |
 | --WO 推荐应用包
+|  WO/robot.wo 机器人
+|  WO/womsg.wo 聊天室
 |
 ```
 
